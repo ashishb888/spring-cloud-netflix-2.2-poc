@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server
+    
+logging:  file:    name: /var/tmp/logs/eureka-server/eureka-server
+  level:    root: INFO
+    poc.springcloud: DEBUG
+    
+server:  port: 8761
+eureka:  client:
+    register-with-eureka: false    fetch-registry: false
