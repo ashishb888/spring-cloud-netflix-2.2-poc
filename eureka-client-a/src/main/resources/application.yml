@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-client-a
+
+logging:  file:    name: /var/tmp/logs/eureka-client-a/eureka-client-a
+  level:    root: INFO
+    poc.springcloud: DEBUG
+    
+server:  port: 0
+
+eureka:  client:    service-url:      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:    prefer-ip-address: true
