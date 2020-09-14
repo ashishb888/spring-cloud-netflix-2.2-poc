@@ -8,5 +8,5 @@ logging:  file:    name: /var/tmp/logs/eureka-client-a/eureka-client-a
     
 server:  port: 0
 
-eureka:  client:    service-url:      default-zone: ${EUREKA_URI:http://localhost:8761/eureka}
+eureka:  client:    serviceUrl:      defaultZone: http://localhost:8761/eureka
   instance:    prefer-ip-address: true
